@@ -21,7 +21,7 @@ int main() {
         }
     }
     
-    int resultado = impar + par;
+    int resultado = impar - par;
     cout << resultado <<endl;
     
     return 0;
