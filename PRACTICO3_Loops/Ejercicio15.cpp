@@ -16,7 +16,7 @@ int main(){
         resto = decimal%2;
         decimal = decimal/2;
         resto += contador;
-        binario = to_string(resto) + binario;
+        binario = binario + to_string(resto);
     }
     cout <<binario;
     return 0;

@@ -7,14 +7,13 @@ int main() {
     string frase;
     getline (cin, frase);
     int posiciones = frase.length();
-    cout << posiciones << endl;
     
     for(int i = 0;i<posiciones;i++){
         if(frase[i] == ' '){
             cout<<i<<endl;
         }
     }
-    cout << frase.length() << endl;
+    cout << posiciones << endl;
     
     return 0;
 }

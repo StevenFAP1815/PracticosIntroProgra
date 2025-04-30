@@ -12,11 +12,11 @@ int main() {
     string password;
     cin >> password;
 
-    // Condición de longitud de la contraseña
+    // Longitud de la contraseña
     if (password.size() >= 8 && password.size() <= 14) {
         int cont_mayus = 0;
         int cont_minus = 0;
-        // Recorremos la contraseña
+
         for (int i = 0; i < password.size(); i++) {
             // Comprobamos si tiene mayúsculas
             if (password[i] >= 'A' && password[i] <= 'Z') {
@@ -30,7 +30,7 @@ int main() {
             if (password[i] >= '0' && password[i] <= '9') {
                 contiene_numeros = true;
             }
-            // Comprobamos si tiene caracteres especiales (puedes agregar más caracteres si lo deseas)
+            
             if ((password[i] >= 33 && password[i] <= 47) || (password[i] >= 58 && password[i] <= 64) || 
                 (password[i] >= 91 && password[i] <= 96) || (password[i] >= 123 && password[i] <= 126)) {
                 caracteres_especiales = true;

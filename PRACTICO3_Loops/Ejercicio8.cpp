@@ -14,6 +14,7 @@ int main() {
     while(longitud>100){
         cout << "No mas de 100 caracteres" <<endl;
         getline(cin, frase);}
+        
     for(int i = 0; i < longitud; i++) {
         if(frase[i] != ' ') {  
             char letra = frase[i];
@@ -24,12 +25,12 @@ int main() {
         }
     }
     
-
+    int long_s_e = frase_sin_espacios.length(); 
     bool es_palindromo = true;  
     
-    for(int i = 0; i < frase_sin_espacios.length() / 2; i++) {
+    for(int i = 0; i < long_s_e / 2; i++) {
         
-        if(frase_sin_espacios[i] != frase_sin_espacios[frase_sin_espacios.length() - 1 - i]) {
+        if(frase_sin_espacios[i] != frase_sin_espacios[long_s_e - 1 - i]) {
             es_palindromo = false;  
             break;  
         }

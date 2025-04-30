@@ -12,9 +12,6 @@ int main(){
     string num = to_string(n);
     int longitud = num.length();
     
-    for(int i = 0; i<=longitud; i++){
-        char com = num[i];
-    }
     bool palindromo = true;
     
     for(int i = 0; i<=longitud; i++){
